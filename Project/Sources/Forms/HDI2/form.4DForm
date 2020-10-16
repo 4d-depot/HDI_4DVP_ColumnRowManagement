@@ -1,0 +1,530 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 879,
+					"height": 679,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 828,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/information.4dm"
+				}
+			},
+			"entryOrder": []
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 52,
+					"width": 274,
+					"height": 193,
+					"fill": "transparent"
+				},
+				"information2": {
+					"type": "input",
+					"top": 59,
+					"left": 44,
+					"width": 828,
+					"height": 48,
+					"sizingX": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ViewProArea": {
+					"type": "view",
+					"left": 38,
+					"top": 329,
+					"width": 852,
+					"height": 357,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"events": [
+						"onVPReady"
+					],
+					"method": "ObjectMethods/ViewProArea.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"Input": {
+					"type": "input",
+					"left": 170,
+					"top": 170,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.columnAttributs.header"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 170,
+					"top": 195,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.columnAttributs.width"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "",
+					"top": 221,
+					"left": 170,
+					"width": 47,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.columnAttributs.visible",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "",
+					"top": 247,
+					"left": 170,
+					"width": 47,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.columnAttributs.resizable",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Header:",
+					"top": 171,
+					"left": 81,
+					"width": 85,
+					"height": 15
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Width:",
+					"top": 196,
+					"left": 81,
+					"width": 85,
+					"height": 15
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Visible:",
+					"top": 222,
+					"left": 81,
+					"width": 85,
+					"height": 15
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Resizable:",
+					"top": 248,
+					"left": 81,
+					"width": 85,
+					"height": 15
+				},
+				"Button": {
+					"type": "button",
+					"text": "Apply to selection",
+					"top": 274,
+					"left": 81,
+					"width": 217,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Columns",
+					"top": 137,
+					"left": 81,
+					"width": 152,
+					"height": 22,
+					"fontWeight": "bold",
+					"stroke": "#808080",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 346,
+					"width": 274,
+					"height": 193,
+					"fill": "transparent"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 464,
+					"top": 170,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.rowAttributs.header"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 464,
+					"top": 195,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.rowAttributs.height"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"text": "",
+					"top": 221,
+					"left": 464,
+					"width": 47,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.rowAttributs.visible",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"text": "",
+					"top": 247,
+					"left": 464,
+					"width": 47,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.rowAttributs.resizable",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Header:",
+					"top": 171,
+					"left": 375,
+					"width": 85,
+					"height": 15
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Height:",
+					"top": 196,
+					"left": 375,
+					"width": 85,
+					"height": 15
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Visible:",
+					"top": 222,
+					"left": 375,
+					"width": 85,
+					"height": 15
+				},
+				"Text8": {
+					"type": "text",
+					"text": "Resizable:",
+					"top": 248,
+					"left": 375,
+					"width": 85,
+					"height": 15
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Apply to selection",
+					"top": 274,
+					"left": 375,
+					"width": 217,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "Rows",
+					"top": 137,
+					"left": 375,
+					"width": 152,
+					"height": 22,
+					"fontWeight": "bold",
+					"stroke": "#808080",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 127,
+					"left": 660,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace"
+				},
+				"Button7": {
+					"type": "button",
+					"text": " Autofit selected row(s)",
+					"top": 232,
+					"left": 660,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm"
+				},
+				"Button8": {
+					"type": "button",
+					"text": " Autofit selected column(s)",
+					"top": 192,
+					"left": 660,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button8.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 99,
+					"width": 349,
+					"height": 164,
+					"fill": "transparent"
+				},
+				"ViewProArea1": {
+					"type": "view",
+					"left": 38,
+					"top": 329,
+					"width": 852,
+					"height": 357,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"events": [
+						"onVPReady"
+					],
+					"method": "ObjectMethods/ViewProArea1.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 298,
+					"top": 191,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.rowCount"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Number of rows:",
+					"top": 192,
+					"left": 128,
+					"width": 133,
+					"height": 15
+				},
+				"Input5": {
+					"type": "input",
+					"left": 298,
+					"top": 216,
+					"width": 128,
+					"height": 16,
+					"dataSource": "Form:C1466.columnCount"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Number of columns:",
+					"top": 217,
+					"left": 128,
+					"width": 150,
+					"height": 15
+				},
+				"Button6": {
+					"type": "button",
+					"text": "Apply",
+					"top": 257,
+					"left": 159,
+					"width": 217,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button6.4dm"
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 127,
+					"left": 660,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Delete selected column(s) ",
+					"top": 153,
+					"left": 635,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Delete selected row(s)",
+					"top": 232,
+					"left": 635,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Insert row(s)",
+					"top": 272,
+					"left": 635,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Insert column(s)",
+					"top": 192,
+					"left": 635,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm"
+				},
+				"information1": {
+					"type": "input",
+					"top": 59,
+					"left": 44,
+					"width": 828,
+					"height": 48,
+					"sizingX": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"text": "Row and column count",
+					"top": 145,
+					"left": 126,
+					"width": 300,
+					"height": 22,
+					"fontWeight": "bold",
+					"stroke": "#808080",
+					"fontFamily": "Arial",
+					"fontSize": 18
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"formSizeAnchor": "Tab Control",
+	"rightMargin": 20,
+	"bottomMargin": 20
+}
